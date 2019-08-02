@@ -19,6 +19,7 @@ namespace COMP123_S2019_A5_300988937.Views
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Enabled = false;
             Program.Forms[FormName.ABOUT_FORM].Show();
         }
 

@@ -101,5 +101,11 @@ namespace COMP123_S2019_A5_300988937.Views
             }
         }
         #endregion
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+            Program.Forms[FormName.ORDER_FORM].Enabled = true;
+            this.Hide();
+        }
     }
 }

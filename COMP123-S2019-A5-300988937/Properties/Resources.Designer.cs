@@ -63,16 +63,6 @@ namespace COMP123_S2019_A5_300988937.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap advert {
-            get {
-                object obj = ResourceManager.GetObject("advert", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap advert1 {
             get {
                 object obj = ResourceManager.GetObject("advert1", resourceCulture);
@@ -83,29 +73,9 @@ namespace COMP123_S2019_A5_300988937.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap header {
-            get {
-                object obj = ResourceManager.GetObject("header", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap header1 {
             get {
                 object obj = ResourceManager.GetObject("header1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap network {
-            get {
-                object obj = ResourceManager.GetObject("network", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
