@@ -568,6 +568,7 @@
             // OSTextBox
             // 
             this.OSTextBox.Dock = System.Windows.Forms.DockStyle.Left;
+            this.OSTextBox.ForeColor = System.Drawing.Color.Tomato;
             this.OSTextBox.Location = new System.Drawing.Point(413, 199);
             this.OSTextBox.Name = "OSTextBox";
             this.OSTextBox.Size = new System.Drawing.Size(197, 32);
