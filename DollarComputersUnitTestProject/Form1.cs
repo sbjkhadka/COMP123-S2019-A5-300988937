@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace COMP123_S2019_A5_300988937
+namespace DollarComputersUnitTestProject
 {
     public partial class Form1 : Form
     {

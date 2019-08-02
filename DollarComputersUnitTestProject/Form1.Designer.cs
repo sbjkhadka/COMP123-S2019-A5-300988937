@@ -1,4 +1,4 @@
-﻿namespace COMP123_S2019_A5_300988937
+﻿namespace DollarComputersUnitTestProject
 {
     partial class Form1
     {
