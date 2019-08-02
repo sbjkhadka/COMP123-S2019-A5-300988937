@@ -20,9 +20,9 @@ namespace COMP123_S2019_A5_300988937.Views
         private void SelectForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
-            this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
+            //this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
             // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
-            this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
+            //this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
             // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
             this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
             NextButton.Enabled = false;
@@ -43,6 +43,22 @@ namespace COMP123_S2019_A5_300988937.Views
         private void ProductsDataGridView_SelectionChanged(object sender, EventArgs e)
         {
             NextButton.Enabled = true;
+
+            SelectedProductTextBox.Text = ProductsDataGridViewSelectedItem();//put it in controller
+            //int rowIndex = ProductsDataGridView.CurrentCell.RowIndex;
+
+        }
+        //inside controller
+        
+        private string ProductsDataGridViewSelectedItem()
+        {
+            var rowIndex = ProductsDataGridView.CurrentCell.RowIndex;
+            var currentRow = ProductsDataGridView.Rows[rowIndex];
+            var cost = ProductsDataGridView.CurrentRow.Cells[1].Value.ToString();
+            var manufacturer=ProductsDataGridView.CurrentRow.Cells[2].Value.ToString();
+            var model= ProductsDataGridView.CurrentRow.Cells[3].Value.ToString();
+            string outputString = manufacturer + " " + model + " " + $"{cost:c2}";
+            return outputString;
         }
     }
 }
