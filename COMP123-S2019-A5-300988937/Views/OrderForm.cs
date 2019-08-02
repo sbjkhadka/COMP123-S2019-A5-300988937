@@ -46,5 +46,12 @@ namespace COMP123_S2019_A5_300988937.Views
             }
 
         }
+
+        private void OrderForm_Load(object sender, EventArgs e)
+        {
+            this.StartPosition = FormStartPosition.Manual;
+            this.Top = (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2;
+            this.Left = (Screen.PrimaryScreen.Bounds.Width - this.Width) / 2;
+        }
     }
 }
