@@ -6,7 +6,14 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// APP Name: Product selection System
+/// Author's Name: Subarna Bijaya Khadka
+/// Student ID: 300988937
+/// App Creation Date: 8/2/2019
+/// App Descrition: This application allows user to select products from a 
+/// database table as well as from the saved file.
+/// </summary>
 namespace COMP123_S2019_A5_300988937.Views
 {
    public  partial class AboutForm : Form

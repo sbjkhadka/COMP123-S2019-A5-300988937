@@ -7,7 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// APP Name: Product selection System
+/// Author's Name: Subarna Bijaya Khadka
+/// Student ID: 300988937
+/// App Creation Date: 8/2/2019
+/// App Descrition: This application allows user to select products from a 
+/// database table as well as from the saved file.
+/// </summary>
 namespace COMP123_S2019_A5_300988937.Views
 {
     public partial class SelectForm : Form
@@ -16,39 +23,47 @@ namespace COMP123_S2019_A5_300988937.Views
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// select form load event handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SelectForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
-            //this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
-            // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
-            //this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
-            // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
             this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
             NextButton.Enabled = false;
-
         }
-
+        /// <summary>
+        /// Terminates the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        /// <summary>
+        /// closes this form and opens product into form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             Program.Forms[FormName.PRODUCT_INFO_FORM].Show();
             Hide();
         }
-
+        /// <summary>
+        /// data grid view selection changed event handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProductsDataGridView_SelectionChanged(object sender, EventArgs e)
         {
             NextButton.Enabled = true;
-
             SelectedProductTextBox.Text = ProductsDataGridViewSelectedItem();//put it in controller
-            //int rowIndex = ProductsDataGridView.CurrentCell.RowIndex;
-
         }
-        //inside controller
+
+        // this method will go inside controller section in the final submission
         
         private string ProductsDataGridViewSelectedItem()
         {
