@@ -562,7 +562,7 @@
             // 
             // SelectedProductPictureBox
             // 
-            this.SelectedProductPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SelectedProductPictureBox.Image")));
+            this.SelectedProductPictureBox.Image = global::COMP123_S2019_A5_300988937.Properties.Resources.My_Computer;
             this.SelectedProductPictureBox.Location = new System.Drawing.Point(646, 56);
             this.SelectedProductPictureBox.Name = "SelectedProductPictureBox";
             this.SelectedProductPictureBox.Size = new System.Drawing.Size(206, 146);
