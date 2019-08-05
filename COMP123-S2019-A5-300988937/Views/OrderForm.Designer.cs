@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderForm));
             this.OrderFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -86,6 +87,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.SelectedProductPictureBox = new System.Windows.Forms.PictureBox();
+            this.ProductPrintForm = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
             this.OrderFormMenuStrip.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -121,12 +123,12 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(137, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(137, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -134,13 +136,14 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.printToolStripMenuItem.Text = "&Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.OrderFromCancelButton_Click);
             // 
@@ -155,7 +158,7 @@
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.backToolStripMenuItem.Text = "&Back";
             this.backToolStripMenuItem.Click += new System.EventHandler(this.OrderFormBackButton_Click);
             // 
@@ -732,6 +735,14 @@
             this.SelectedProductPictureBox.TabIndex = 7;
             this.SelectedProductPictureBox.TabStop = false;
             // 
+            // ProductPrintForm
+            // 
+            this.ProductPrintForm.DocumentName = "document";
+            this.ProductPrintForm.Form = this;
+            this.ProductPrintForm.PrintAction = System.Drawing.Printing.PrintAction.PrintToPreview;
+            this.ProductPrintForm.PrinterSettings = ((System.Drawing.Printing.PrinterSettings)(resources.GetObject("ProductPrintForm.PrinterSettings")));
+            this.ProductPrintForm.PrintFileName = null;
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -831,5 +842,6 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private System.Windows.Forms.GroupBox groupBox1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer3;
+        private Microsoft.VisualBasic.PowerPacks.Printing.PrintForm ProductPrintForm;
     }
 }

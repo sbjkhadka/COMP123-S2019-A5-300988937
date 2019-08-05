@@ -35,6 +35,7 @@
             this.BottomPictureBox = new System.Windows.Forms.PictureBox();
             this.LogoPictureBox = new System.Windows.Forms.PictureBox();
             this.StartFormWebsiteLabel = new System.Windows.Forms.Label();
+            this.ProductOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.BottomPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -111,6 +112,10 @@
             this.StartFormWebsiteLabel.TabIndex = 5;
             this.StartFormWebsiteLabel.Text = "www.dollarcomputers.ca";
             // 
+            // ProductOpenFileDialog
+            // 
+            this.ProductOpenFileDialog.FileName = "openFileDialog1";
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +151,7 @@
         private System.Windows.Forms.PictureBox LogoPictureBox;
         private System.Windows.Forms.PictureBox BottomPictureBox;
         private System.Windows.Forms.Label StartFormWebsiteLabel;
+        private System.Windows.Forms.OpenFileDialog ProductOpenFileDialog;
     }
 }
 

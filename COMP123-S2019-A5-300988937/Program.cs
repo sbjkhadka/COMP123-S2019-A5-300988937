@@ -39,7 +39,7 @@ namespace COMP123_S2019_A5_300988937
             Forms.Add(FormName.ORDER_FORM, new OrderForm());
             Forms.Add(FormName.ABOUT_FORM, new AboutForm());
             product = new Product();
-            Application.Run(Forms[FormName.SPLASH_FORM]);
+            Application.Run(Forms[FormName.START_FORM]);
         }
     }
 }

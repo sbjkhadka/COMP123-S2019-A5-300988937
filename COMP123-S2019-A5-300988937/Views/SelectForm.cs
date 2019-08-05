@@ -1,7 +1,9 @@
-﻿using System;
+﻿using COMP123_S2019_A5_300988937.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +19,40 @@ using System.Windows.Forms;
 /// </summary>
 namespace COMP123_S2019_A5_300988937.Views
 {
+    enum productHeaders
+    {
+        PRODUCT_ID,
+        COST,
+        MANUFACTURER,
+        MODEL,
+        RAM_TYPE,
+        RAM_SIZE,
+        DISPLAY_TYPE,
+        SCREEN_SIZE,
+        RESOLUTION,
+        CPU_CLASS,
+        CPU_BRAND,
+        CPU_TYPE,
+        CPU_SPEED,
+        CPU_NUMBER,
+        CONDITION,
+        OS,
+        PLATFORM,
+        HDD_SIZE,
+        HDD_SPEED,
+        GPU_TYPE,
+        OPTICAL_DRIVE,
+        AUDIO_TYPE,
+        LAN,
+        WIFI,
+        WIDTH,
+        HEIGHT,
+        DEPTH,
+        WEIGHT,
+        MOUST_TYPE,
+        POWER,
+        WEBCAM
+    }
     public partial class SelectForm : Form
     {
         public SelectForm()
@@ -30,7 +66,7 @@ namespace COMP123_S2019_A5_300988937.Views
         /// <param name="e"></param>
         private void SelectForm_Load(object sender, EventArgs e)
         {
-            this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
+            LoadDataIntoDataGridView();
             NextButton.Enabled = false;
         }
         /// <summary>
@@ -43,7 +79,7 @@ namespace COMP123_S2019_A5_300988937.Views
             Application.Exit();
         }
         /// <summary>
-        /// closes this form and opens product into form
+        /// closes this form and opens product info form
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -60,20 +96,10 @@ namespace COMP123_S2019_A5_300988937.Views
         private void ProductsDataGridView_SelectionChanged(object sender, EventArgs e)
         {
             NextButton.Enabled = true;
-            SelectedProductTextBox.Text = ProductsDataGridViewSelectedItem();//put it in controller
-        }
-
-        // this method will go inside controller section in the final submission
-        
-        private string ProductsDataGridViewSelectedItem()
-        {
             var rowIndex = ProductsDataGridView.CurrentCell.RowIndex;
             var currentRow = ProductsDataGridView.Rows[rowIndex];
-            var cost = ProductsDataGridView.CurrentRow.Cells[1].Value.ToString();
-            var manufacturer=ProductsDataGridView.CurrentRow.Cells[2].Value.ToString();
-            var model= ProductsDataGridView.CurrentRow.Cells[3].Value.ToString();
-            string outputString = manufacturer + " " + model + " " + $"{cost:c2}";
-            return outputString;
-        }
+            LoadDataFromSelectedRowToProductModel(currentRow); //method is defined in controller
+            SelectedProductTextBox.Text = ProductsDataGridViewSelectedItem();// method is defined in controller
+        }  
     }
 }

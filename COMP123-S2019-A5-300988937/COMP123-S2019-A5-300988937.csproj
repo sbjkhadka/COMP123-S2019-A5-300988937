@@ -75,6 +75,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ProductInfoForm.Controller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controllers\SelectForm.Controller.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Data\Product.cs" />
     <Compile Include="Data\ProductModel.cs" />
     <Compile Include="DollarComputersDataSet.Designer.cs">
@@ -173,16 +179,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="My-Computer.ico" />
     <None Include="Resources\header1.jpg" />
     <None Include="Resources\header.jpg" />
     <None Include="Resources\advert1.jpg" />
-    <None Include="Resources\advert.jpg" />
     <None Include="Resources\splash.png" />
     <None Include="Resources\network.jpg" />
   </ItemGroup>

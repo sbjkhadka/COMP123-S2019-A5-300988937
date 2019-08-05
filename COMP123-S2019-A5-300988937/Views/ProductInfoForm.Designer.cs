@@ -76,6 +76,8 @@
             this.ProductInfoCancel = new System.Windows.Forms.Button();
             this.ProductInfoNextButton = new System.Windows.Forms.Button();
             this.ProductIDTextBox = new System.Windows.Forms.TextBox();
+            this.ProductSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.ProductOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.ProductInfoMenuStrip.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -111,13 +113,14 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -125,13 +128,14 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "&Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ProductInfoCancel_Click);
             // 
@@ -618,6 +622,10 @@
             this.ProductIDTextBox.Size = new System.Drawing.Size(100, 29);
             this.ProductIDTextBox.TabIndex = 2;
             // 
+            // ProductOpenFileDialog
+            // 
+            this.ProductOpenFileDialog.FileName = "openFileDialog1";
+            // 
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -642,7 +650,7 @@
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";
-            this.Load += new System.EventHandler(this.ProductInfoForm_Load);
+            this.Activated += new System.EventHandler(this.ProductInfoForm_Activated);
             this.ProductInfoMenuStrip.ResumeLayout(false);
             this.ProductInfoMenuStrip.PerformLayout();
             this.ProductInfoGroupBox.ResumeLayout(false);
@@ -705,5 +713,7 @@
         private System.Windows.Forms.TextBox ProductIDTextBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.SaveFileDialog ProductSaveFileDialog;
+        private System.Windows.Forms.OpenFileDialog ProductOpenFileDialog;
     }
 }

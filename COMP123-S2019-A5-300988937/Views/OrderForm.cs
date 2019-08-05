@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 /// <summary>
 /// APP Name: Product selection System
 /// Author's Name: Subarna Bijaya Khadka
@@ -19,6 +21,8 @@ namespace COMP123_S2019_A5_300988937.Views
 {
     public partial class OrderForm : Form
     {
+        
+
         public OrderForm()
         {
             InitializeComponent();
@@ -30,8 +34,7 @@ namespace COMP123_S2019_A5_300988937.Views
         /// <param name="e"></param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Enabled = false;
-            Program.Forms[FormName.ABOUT_FORM].Show();
+            Program.Forms[FormName.ABOUT_FORM].ShowDialog();
         }
         /// <summary>
         /// moves towards product info form
@@ -78,6 +81,12 @@ namespace COMP123_S2019_A5_300988937.Views
             this.StartPosition = FormStartPosition.Manual;
             this.Top = (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2;
             this.Left = (Screen.PrimaryScreen.Bounds.Width - this.Width) / 2;
+        }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductPrintForm.PrintAction = PrintAction.PrintToPreview;
+            ProductPrintForm.Print();
         }
     }
 }
