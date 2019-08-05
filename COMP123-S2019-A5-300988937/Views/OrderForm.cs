@@ -104,13 +104,11 @@ namespace COMP123_S2019_A5_300988937.Views
             WebcamValueLabel.Text = Model.webcam;
             MemoryValueLabel.Text = Model.RAM_size;
             OSValueLabel.Text = Model.OS;
-            
-            bool cost = float.TryParse(Model.cost.ToString(), out float costValue);
-            bool tax = float.TryParse(((decimal)0.13 * Model.cost).ToString(), out float taxValue);
-            PriceValueLabel.Text = $"{Model.cost:C2}".ToString();
-            SalesTaxValueLabel.Text = $"{(decimal)0.13*Model.cost:C2}";
-            TotalValueLabel.Text = $"{(costValue+taxValue):C2}";
+
+            PrepareBill(Model);
 
         }
+
+      
     }
 }
