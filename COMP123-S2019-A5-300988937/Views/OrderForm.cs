@@ -62,31 +62,55 @@ namespace COMP123_S2019_A5_300988937.Views
         /// <param name="e"></param>
         private void OrderFormFinishButton_Click(object sender, EventArgs e)
         {
-            MessageBoxButtons buttons = MessageBoxButtons.OK;
-            DialogResult result;
-            result = MessageBox.Show(this, "Thank you for your business, " +
-                "\r\nYour order will be processed within seven business days", "Info", buttons);
+            var result=MessageBox.Show(this, "Thank you for your business, " +
+                "\r\nYour order will be processed within seven business days", "Thank you", MessageBoxButtons.OK, MessageBoxIcon.Information);
             if (result == DialogResult.OK)
             {
                 Application.Exit();
             }
         }
-        /// <summary>
-        /// order form load event handler
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void OrderForm_Load(object sender, EventArgs e)
-        {
-            this.StartPosition = FormStartPosition.Manual;
-            this.Top = (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2;
-            this.Left = (Screen.PrimaryScreen.Bounds.Width - this.Width) / 2;
-        }
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProductPrintForm.PrintAction = PrintAction.PrintToPreview;
-            ProductPrintForm.Print();
+            var result = MessageBox.Show(this, "Your selection is going to be printed !", "Print message", MessageBoxButtons.OKCancel, MessageBoxIcon.Hand);
+            if (result == DialogResult.OK)
+            {
+                ProductPrintForm.PrintAction = PrintAction.PrintToPreview;
+                ProductPrintForm.Print();
+            }
+            
+        }
+
+        private void OrderForm_Activated(object sender, EventArgs e)
+        {
+            //centering the form
+            this.StartPosition = FormStartPosition.Manual;
+            this.Top = (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2;
+            this.Left = (Screen.PrimaryScreen.Bounds.Width - this.Width) / 2;
+
+            //load data into labels
+            var Model = Program.product;
+            ConditionValueLabel.Text = Model.condition;
+            ManufacturerValueLabel.Text = Model.manufacturer;
+            PlatformValueLabel.Text = Model.platform;
+            ModelValueLabel.Text = Model.model;
+            CPUSpeedValueLabel.Text = Model.CPU_speed;
+            CPUBrandValueLabel.Text = Model.CPU_brand;
+            CPUTypeValueLabel.Text = Model.CPU_type;
+            CPUNumberValueLabel.Text = Model.CPU_number;
+            LCDSizeValueLabel.Text = Model.screensize;
+            HDDValueLabel.Text = Model.HDD_size;
+            GPUTypeValueLabel.Text = Model.GPU_Type;
+            WebcamValueLabel.Text = Model.webcam;
+            MemoryValueLabel.Text = Model.RAM_size;
+            OSValueLabel.Text = Model.OS;
+            
+            bool cost = float.TryParse(Model.cost.ToString(), out float costValue);
+            bool tax = float.TryParse(((decimal)0.13 * Model.cost).ToString(), out float taxValue);
+            PriceValueLabel.Text = $"{Model.cost:C2}".ToString();
+            SalesTaxValueLabel.Text = $"{(decimal)0.13*Model.cost:C2}";
+            TotalValueLabel.Text = $"{(costValue+taxValue):C2}";
+
         }
     }
 }
