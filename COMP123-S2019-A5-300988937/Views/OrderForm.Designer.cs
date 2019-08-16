@@ -32,10 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderForm));
             this.OrderFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProductInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.ModelLabel = new System.Windows.Forms.Label();
@@ -83,20 +81,22 @@
             this.SalesTaxValueLabel = new System.Windows.Forms.Label();
             this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.ProductPrintForm = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.OrderFormToolStrip = new System.Windows.Forms.ToolStrip();
             this.cutToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.printToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.SelectedProductPictureBox = new System.Windows.Forms.PictureBox();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OrderFormMenuStrip.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SpecificationsGroupBox.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.OrderFormToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SelectedProductPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,15 +122,6 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Tomato;
-            this.exitToolStripMenuItem.Image = global::COMP123_S2019_A5_300988937.Properties.Resources.exit1;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.OrderFromCancelButton_Click);
-            // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -148,15 +139,6 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.ForeColor = System.Drawing.Color.Tomato;
-            this.aboutToolStripMenuItem.Image = global::COMP123_S2019_A5_300988937.Properties.Resources.about1;
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aboutToolStripMenuItem.Text = "&About...";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // ProductInfoGroupBox
             // 
@@ -736,17 +718,17 @@
             this.ProductPrintForm.PrinterSettings = ((System.Drawing.Printing.PrinterSettings)(resources.GetObject("ProductPrintForm.PrinterSettings")));
             this.ProductPrintForm.PrintFileName = null;
             // 
-            // toolStrip1
+            // OrderFormToolStrip
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.OrderFormToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cutToolStripButton,
             this.printToolStripButton,
             this.helpToolStripButton});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(864, 25);
-            this.toolStrip1.TabIndex = 10;
-            this.toolStrip1.Text = "toolStrip1";
+            this.OrderFormToolStrip.Location = new System.Drawing.Point(0, 24);
+            this.OrderFormToolStrip.Name = "OrderFormToolStrip";
+            this.OrderFormToolStrip.Size = new System.Drawing.Size(864, 25);
+            this.OrderFormToolStrip.TabIndex = 10;
+            this.OrderFormToolStrip.Text = "toolStrip1";
             // 
             // cutToolStripButton
             // 
@@ -799,14 +781,32 @@
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Tomato;
+            this.exitToolStripMenuItem.Image = global::COMP123_S2019_A5_300988937.Properties.Resources.exit1;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.OrderFromCancelButton_Click);
+            // 
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.ForeColor = System.Drawing.Color.Tomato;
             this.backToolStripMenuItem.Image = global::COMP123_S2019_A5_300988937.Properties.Resources.back;
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.backToolStripMenuItem.Text = "&Back";
             this.backToolStripMenuItem.Click += new System.EventHandler(this.OrderFormBackButton_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.ForeColor = System.Drawing.Color.Tomato;
+            this.aboutToolStripMenuItem.Image = global::COMP123_S2019_A5_300988937.Properties.Resources.about1;
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.aboutToolStripMenuItem.Text = "&About...";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // OrderForm
             // 
@@ -815,7 +815,7 @@
             this.BackColor = System.Drawing.Color.Tomato;
             this.ClientSize = new System.Drawing.Size(864, 561);
             this.ControlBox = false;
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.OrderFormToolStrip);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.SelectedProductPictureBox);
             this.Controls.Add(this.OrderFormFinishButton);
@@ -844,8 +844,8 @@
             this.tableLayoutPanel2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.OrderFormToolStrip.ResumeLayout(false);
+            this.OrderFormToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SelectedProductPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -910,7 +910,7 @@
         private System.Windows.Forms.Label TotalValueLabel;
         private System.Windows.Forms.Label PriceValueLabel;
         private System.Windows.Forms.Label SalesTaxValueLabel;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip OrderFormToolStrip;
         private System.Windows.Forms.ToolStripButton printToolStripButton;
         private System.Windows.Forms.ToolStripButton cutToolStripButton;
         private System.Windows.Forms.ToolStripButton helpToolStripButton;

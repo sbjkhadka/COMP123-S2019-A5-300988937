@@ -78,7 +78,7 @@
             this.ProductIDValueLabel = new System.Windows.Forms.Label();
             this.ConditionValueLabel = new System.Windows.Forms.Label();
             this.CostValueLabel = new System.Windows.Forms.Label();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.ProductInfoFormToolStrip = new System.Windows.Forms.ToolStrip();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.FindAnotherProductToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -87,7 +87,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.SpecificationsGroupBox.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.ProductInfoFormToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // ProductInfoMenuStrip
@@ -662,17 +662,17 @@
             this.CostValueLabel.Text = "label1";
             this.CostValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // toolStrip1
+            // ProductInfoFormToolStrip
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ProductInfoFormToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripButton,
             this.saveToolStripButton,
             this.FindAnotherProductToolStripButton});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(864, 25);
-            this.toolStrip1.TabIndex = 5;
-            this.toolStrip1.Text = "toolStrip1";
+            this.ProductInfoFormToolStrip.Location = new System.Drawing.Point(0, 24);
+            this.ProductInfoFormToolStrip.Name = "ProductInfoFormToolStrip";
+            this.ProductInfoFormToolStrip.Size = new System.Drawing.Size(864, 25);
+            this.ProductInfoFormToolStrip.TabIndex = 5;
+            this.ProductInfoFormToolStrip.Text = "toolStrip1";
             // 
             // openToolStripButton
             // 
@@ -711,7 +711,7 @@
             this.BackColor = System.Drawing.Color.Tomato;
             this.ClientSize = new System.Drawing.Size(864, 561);
             this.ControlBox = false;
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.ProductInfoFormToolStrip);
             this.Controls.Add(this.ProductInfoNextButton);
             this.Controls.Add(this.ProductInfoCancel);
             this.Controls.Add(this.SelectAnotherProductButton);
@@ -739,8 +739,8 @@
             this.SpecificationsGroupBox.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.ProductInfoFormToolStrip.ResumeLayout(false);
+            this.ProductInfoFormToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -797,7 +797,7 @@
         private System.Windows.Forms.Label ProductIDValueLabel;
         private System.Windows.Forms.Label ConditionValueLabel;
         private System.Windows.Forms.Label CostValueLabel;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip ProductInfoFormToolStrip;
         private System.Windows.Forms.ToolStripButton openToolStripButton;
         private System.Windows.Forms.ToolStripButton saveToolStripButton;
         private System.Windows.Forms.ToolStripButton FindAnotherProductToolStripButton;
