@@ -668,11 +668,12 @@
             this.Controls.Add(this.ConditionLabel);
             this.Controls.Add(this.ProductIDLabel);
             this.Controls.Add(this.ProductInfoMenuStrip);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.ProductInfoMenuStrip;
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ProductInfoForm";
+            this.Text = "Product Information Form";
             this.Activated += new System.EventHandler(this.ProductInfoForm_Activated);
             this.ProductInfoMenuStrip.ResumeLayout(false);
             this.ProductInfoMenuStrip.PerformLayout();

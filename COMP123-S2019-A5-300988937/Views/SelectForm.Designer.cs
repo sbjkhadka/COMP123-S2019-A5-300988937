@@ -468,6 +468,7 @@
             this.Controls.Add(this.SelectionLabel);
             this.Controls.Add(this.SelectFromTitleBarLabel);
             this.Controls.Add(this.ProductsDataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SelectForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
