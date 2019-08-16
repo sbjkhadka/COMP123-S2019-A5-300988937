@@ -185,7 +185,13 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="My-Computer.ico" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\about1.png" />
     <Content Include="Resources\desktop.png" />
+    <None Include="Resources\icon.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\exit1.png" />
     <Content Include="Resources\laptop.png" />
     <None Include="Resources\My-Computer.png" />
     <None Include="Resources\header1.jpg" />
