@@ -158,44 +158,66 @@ namespace COMP123_S2019_A5_300988937.Views
             if (result != DialogResult.Cancel)
             {
                 //open filestream 
-                using (BinaryReader inputStream = new BinaryReader(File.Open(ProductOpenFileDialog.FileName, FileMode.Open)))
+                try
                 {
-                    //read from file into product object
-                    Program.product.productID = short.Parse(inputStream.ReadString());
-                    Program.product.cost = decimal.Parse(inputStream.ReadString());
-                    Program.product.manufacturer = inputStream.ReadString();
-                    Program.product.model = inputStream.ReadString();
-                    Program.product.RAM_type = inputStream.ReadString();
-                    Program.product.RAM_size = inputStream.ReadString();
-                    Program.product.displaytype = inputStream.ReadString();
-                    Program.product.screensize = inputStream.ReadString();
-                    Program.product.resolution = inputStream.ReadString();
-                    Program.product.CPU_Class = inputStream.ReadString();
-                    Program.product.CPU_brand = inputStream.ReadString();
-                    Program.product.CPU_type = inputStream.ReadString();
-                    Program.product.CPU_speed = inputStream.ReadString();
-                    Program.product.CPU_number = inputStream.ReadString();
-                    Program.product.condition = inputStream.ReadString();
-                    Program.product.OS = inputStream.ReadString();
-                    Program.product.platform = inputStream.ReadString();
-                    Program.product.HDD_size = inputStream.ReadString();
-                    Program.product.HDD_speed = inputStream.ReadString();
-                    Program.product.GPU_Type = inputStream.ReadString();
-                    Program.product.optical_drive = inputStream.ReadString();
-                    Program.product.Audio_type = inputStream.ReadString();
-                    Program.product.LAN = inputStream.ReadString();
-                    Program.product.WIFI = inputStream.ReadString();
-                    Program.product.width = inputStream.ReadString();
-                    Program.product.height = inputStream.ReadString();
-                    Program.product.depth = inputStream.ReadString();
-                    Program.product.weight = inputStream.ReadString();
-                    Program.product.moust_type = inputStream.ReadString();
-                    Program.product.power = inputStream.ReadString();
-                    Program.product.webcam = inputStream.ReadString();
+                    using (BinaryReader inputStream = new BinaryReader(File.Open(ProductOpenFileDialog.FileName, FileMode.Open)))
+                    {
+                        //read from file into product object
+                        try
+                        {
+                            Program.product.productID = short.Parse(inputStream.ReadString());
+                            Program.product.cost = decimal.Parse(inputStream.ReadString());
+                            Program.product.manufacturer = inputStream.ReadString();
+                            Program.product.model = inputStream.ReadString();
+                            Program.product.RAM_type = inputStream.ReadString();
+                            Program.product.RAM_size = inputStream.ReadString();
+                            Program.product.displaytype = inputStream.ReadString();
+                            Program.product.screensize = inputStream.ReadString();
+                            Program.product.resolution = inputStream.ReadString();
+                            Program.product.CPU_Class = inputStream.ReadString();
+                            Program.product.CPU_brand = inputStream.ReadString();
+                            Program.product.CPU_type = inputStream.ReadString();
+                            Program.product.CPU_speed = inputStream.ReadString();
+                            Program.product.CPU_number = inputStream.ReadString();
+                            Program.product.condition = inputStream.ReadString();
+                            Program.product.OS = inputStream.ReadString();
+                            Program.product.platform = inputStream.ReadString();
+                            Program.product.HDD_size = inputStream.ReadString();
+                            Program.product.HDD_speed = inputStream.ReadString();
+                            Program.product.GPU_Type = inputStream.ReadString();
+                            Program.product.optical_drive = inputStream.ReadString();
+                            Program.product.Audio_type = inputStream.ReadString();
+                            Program.product.LAN = inputStream.ReadString();
+                            Program.product.WIFI = inputStream.ReadString();
+                            Program.product.width = inputStream.ReadString();
+                            Program.product.height = inputStream.ReadString();
+                            Program.product.depth = inputStream.ReadString();
+                            Program.product.weight = inputStream.ReadString();
+                            Program.product.moust_type = inputStream.ReadString();
+                            Program.product.power = inputStream.ReadString();
+                            Program.product.webcam = inputStream.ReadString();
+                        }
+                        catch(Exception exp)
+                        {
+                            MessageBox.Show("ERROR: " + exp.Message, "ERROR",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                      
 
-                    //cleanup
-                    inputStream.Close();
-                    inputStream.Dispose();
+                        //cleanup
+                        inputStream.Close();
+                        inputStream.Dispose();
+                    }
+                }
+                catch (IOException ioexception)
+                {
+                    MessageBox.Show("ERROR: " + ioexception.Message, "ERROR",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch(Exception exception)
+                {
+                    MessageBox.Show("ERROR: " + exception.Message, "ERROR",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 ProductInfoForm_Activated(sender, e);
             }
