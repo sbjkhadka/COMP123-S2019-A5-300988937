@@ -73,22 +73,22 @@ namespace COMP123_S2019_A5_300988937.Views
         /// <param name="e"></param>
         private void ProductInfoForm_Activated(object sender, EventArgs e)
         {
-            ProductIDTextBox.Text = Program.product.productID.ToString();
-            ConditionTextBox.Text = Program.product.condition;
-            CostTextBox.Text = Program.product.cost.ToString();
-            PlatformTextBox.Text = Program.product.platform;
-            OSTextBox.Text = Program.product.OS;
-            ManufacturerTextBox.Text = Program.product.manufacturer;
-            ModelTextBox.Text = Program.product.model;
-            MemoryTextBox.Text = Program.product.RAM_size;
-            CPUBrandTextBox.Text = Program.product.CPU_brand;
-            CPUTypeTextBox.Text = Program.product.CPU_type;
-            LCDSizeTextBox.Text = Program.product.screensize;
-            CPUNumberTextBox.Text = Program.product.CPU_number;
-            CPUSpeedTextBox.Text = Program.product.CPU_speed;
-            HDDTextBox.Text = Program.product.HDD_size + ", " + Program.product.HDD_speed;
-            GPUTypeTextBox.Text = Program.product.GPU_Type;
-            WebcamTextBox.Text = Program.product.webcam;
+            ProductIDValueLabel.Text = Program.product.productID.ToString();
+            ConditionValueLabel.Text = Program.product.condition;
+            CostValueLabel.Text = $"{Program.product.cost:C2}".ToString();
+            PlatformValueLabel.Text = Program.product.platform;
+            OSValueLabel.Text = Program.product.OS;
+            ManufacturerValueLabel.Text = Program.product.manufacturer;
+            ModelValueLabel.Text = Program.product.model;
+            MemoryValueLabel.Text = Program.product.RAM_size;
+            CPUBrandValueLabel.Text = Program.product.CPU_brand;
+            CPUTypeValueLabel.Text = Program.product.CPU_type;
+            LCDSizeValueLabel.Text = Program.product.screensize;
+            CPUNumberValueLabel.Text = Program.product.CPU_number;
+            CPUSpeedValueLabel.Text = Program.product.CPU_speed;
+            HDDValueLabel.Text = Program.product.HDD_size + ", " + Program.product.HDD_speed;
+            GPUTypeValueLabel.Text = Program.product.GPU_Type;
+            WebcamValueLabel.Text = Program.product.webcam;
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)

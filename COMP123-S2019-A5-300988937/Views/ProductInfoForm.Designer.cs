@@ -40,44 +40,44 @@
             this.ProductIDLabel = new System.Windows.Forms.Label();
             this.ConditionLabel = new System.Windows.Forms.Label();
             this.CostLabel = new System.Windows.Forms.Label();
-            this.ConditionTextBox = new System.Windows.Forms.TextBox();
-            this.CostTextBox = new System.Windows.Forms.TextBox();
             this.ProductInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.ManufacturerValueLabel = new System.Windows.Forms.Label();
+            this.ModelValueLabel = new System.Windows.Forms.Label();
             this.PlatformLabel = new System.Windows.Forms.Label();
-            this.ModelTextBox = new System.Windows.Forms.TextBox();
             this.ModelLabel = new System.Windows.Forms.Label();
-            this.OSTextBox = new System.Windows.Forms.TextBox();
             this.ManufacturerLabel = new System.Windows.Forms.Label();
             this.OSLabel = new System.Windows.Forms.Label();
-            this.PlatformTextBox = new System.Windows.Forms.TextBox();
-            this.ManufacturerTextBox = new System.Windows.Forms.TextBox();
+            this.PlatformValueLabel = new System.Windows.Forms.Label();
+            this.OSValueLabel = new System.Windows.Forms.Label();
             this.SpecificationsGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.MemoryLabel = new System.Windows.Forms.Label();
-            this.WebcamTextBox = new System.Windows.Forms.TextBox();
             this.WebcamLabel = new System.Windows.Forms.Label();
             this.CPUBrandLabel = new System.Windows.Forms.Label();
-            this.HDDTextBox = new System.Windows.Forms.TextBox();
             this.GPUTypeLabel = new System.Windows.Forms.Label();
             this.CPUSpeedLabel = new System.Windows.Forms.Label();
             this.HDDLabel = new System.Windows.Forms.Label();
             this.CPUTypeLabel = new System.Windows.Forms.Label();
-            this.MemoryTextBox = new System.Windows.Forms.TextBox();
-            this.CPUSpeedTextBox = new System.Windows.Forms.TextBox();
             this.CPUNumberLabel = new System.Windows.Forms.Label();
-            this.CPUBrandTextBox = new System.Windows.Forms.TextBox();
-            this.CPUTypeTextBox = new System.Windows.Forms.TextBox();
-            this.CPUNumberTextBox = new System.Windows.Forms.TextBox();
             this.LCDSizeLabel = new System.Windows.Forms.Label();
-            this.LCDSizeTextBox = new System.Windows.Forms.TextBox();
-            this.GPUTypeTextBox = new System.Windows.Forms.TextBox();
+            this.MemoryValueLabel = new System.Windows.Forms.Label();
+            this.LCDSizeValueLabel = new System.Windows.Forms.Label();
+            this.HDDValueLabel = new System.Windows.Forms.Label();
+            this.GPUTypeValueLabel = new System.Windows.Forms.Label();
+            this.CPUNumberValueLabel = new System.Windows.Forms.Label();
+            this.CPUBrandValueLabel = new System.Windows.Forms.Label();
+            this.CPUTypeValueLabel = new System.Windows.Forms.Label();
+            this.CPUSpeedValueLabel = new System.Windows.Forms.Label();
+            this.WebcamValueLabel = new System.Windows.Forms.Label();
             this.SelectAnotherProductButton = new System.Windows.Forms.Button();
             this.ProductInfoCancel = new System.Windows.Forms.Button();
             this.ProductInfoNextButton = new System.Windows.Forms.Button();
-            this.ProductIDTextBox = new System.Windows.Forms.TextBox();
             this.ProductSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.ProductOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.ProductIDValueLabel = new System.Windows.Forms.Label();
+            this.ConditionValueLabel = new System.Windows.Forms.Label();
+            this.CostValueLabel = new System.Windows.Forms.Label();
             this.ProductInfoMenuStrip.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -113,14 +113,14 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -128,14 +128,14 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ProductInfoCancel_Click);
             // 
@@ -187,24 +187,6 @@
             this.CostLabel.TabIndex = 1;
             this.CostLabel.Text = "Cost";
             // 
-            // ConditionTextBox
-            // 
-            this.ConditionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConditionTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.ConditionTextBox.Location = new System.Drawing.Point(321, 35);
-            this.ConditionTextBox.Name = "ConditionTextBox";
-            this.ConditionTextBox.Size = new System.Drawing.Size(100, 29);
-            this.ConditionTextBox.TabIndex = 2;
-            // 
-            // CostTextBox
-            // 
-            this.CostTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CostTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.CostTextBox.Location = new System.Drawing.Point(480, 35);
-            this.CostTextBox.Name = "CostTextBox";
-            this.CostTextBox.Size = new System.Drawing.Size(100, 29);
-            this.CostTextBox.TabIndex = 2;
-            // 
             // ProductInfoGroupBox
             // 
             this.ProductInfoGroupBox.Controls.Add(this.tableLayoutPanel1);
@@ -224,14 +206,14 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.58209F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.452736F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.9204F));
+            this.tableLayoutPanel1.Controls.Add(this.ManufacturerValueLabel, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.ModelValueLabel, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.PlatformLabel, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ModelTextBox, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.ModelLabel, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.OSTextBox, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.ManufacturerLabel, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.OSLabel, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.PlatformTextBox, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ManufacturerTextBox, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.PlatformValueLabel, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.OSValueLabel, 3, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 31);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -239,6 +221,28 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(804, 122);
             this.tableLayoutPanel1.TabIndex = 3;
+            // 
+            // ManufacturerValueLabel
+            // 
+            this.ManufacturerValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.ManufacturerValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.ManufacturerValueLabel.Location = new System.Drawing.Point(133, 61);
+            this.ManufacturerValueLabel.Name = "ManufacturerValueLabel";
+            this.ManufacturerValueLabel.Size = new System.Drawing.Size(263, 35);
+            this.ManufacturerValueLabel.TabIndex = 3;
+            this.ManufacturerValueLabel.Text = "label3";
+            this.ManufacturerValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ModelValueLabel
+            // 
+            this.ModelValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.ModelValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.ModelValueLabel.Location = new System.Drawing.Point(477, 61);
+            this.ModelValueLabel.Name = "ModelValueLabel";
+            this.ModelValueLabel.Size = new System.Drawing.Size(302, 35);
+            this.ModelValueLabel.TabIndex = 4;
+            this.ModelValueLabel.Text = "label1";
+            this.ModelValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PlatformLabel
             // 
@@ -252,16 +256,6 @@
             this.PlatformLabel.TabIndex = 1;
             this.PlatformLabel.Text = "Platform";
             // 
-            // ModelTextBox
-            // 
-            this.ModelTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ModelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModelTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.ModelTextBox.Location = new System.Drawing.Point(477, 64);
-            this.ModelTextBox.Name = "ModelTextBox";
-            this.ModelTextBox.Size = new System.Drawing.Size(324, 29);
-            this.ModelTextBox.TabIndex = 2;
-            // 
             // ModelLabel
             // 
             this.ModelLabel.AutoSize = true;
@@ -273,16 +267,6 @@
             this.ModelLabel.Size = new System.Drawing.Size(63, 61);
             this.ModelLabel.TabIndex = 1;
             this.ModelLabel.Text = "Model";
-            // 
-            // OSTextBox
-            // 
-            this.OSTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.OSTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OSTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.OSTextBox.Location = new System.Drawing.Point(477, 3);
-            this.OSTextBox.Name = "OSTextBox";
-            this.OSTextBox.Size = new System.Drawing.Size(324, 29);
-            this.OSTextBox.TabIndex = 2;
             // 
             // ManufacturerLabel
             // 
@@ -308,25 +292,27 @@
             this.OSLabel.TabIndex = 1;
             this.OSLabel.Text = "OS";
             // 
-            // PlatformTextBox
+            // PlatformValueLabel
             // 
-            this.PlatformTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PlatformTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlatformTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.PlatformTextBox.Location = new System.Drawing.Point(133, 3);
-            this.PlatformTextBox.Name = "PlatformTextBox";
-            this.PlatformTextBox.Size = new System.Drawing.Size(263, 29);
-            this.PlatformTextBox.TabIndex = 2;
+            this.PlatformValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.PlatformValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.PlatformValueLabel.Location = new System.Drawing.Point(133, 0);
+            this.PlatformValueLabel.Name = "PlatformValueLabel";
+            this.PlatformValueLabel.Size = new System.Drawing.Size(263, 36);
+            this.PlatformValueLabel.TabIndex = 2;
+            this.PlatformValueLabel.Text = "label1";
+            this.PlatformValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ManufacturerTextBox
+            // OSValueLabel
             // 
-            this.ManufacturerTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ManufacturerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ManufacturerTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.ManufacturerTextBox.Location = new System.Drawing.Point(133, 64);
-            this.ManufacturerTextBox.Name = "ManufacturerTextBox";
-            this.ManufacturerTextBox.Size = new System.Drawing.Size(263, 29);
-            this.ManufacturerTextBox.TabIndex = 2;
+            this.OSValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.OSValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.OSValueLabel.Location = new System.Drawing.Point(477, 0);
+            this.OSValueLabel.Name = "OSValueLabel";
+            this.OSValueLabel.Size = new System.Drawing.Size(302, 36);
+            this.OSValueLabel.TabIndex = 2;
+            this.OSValueLabel.Text = "label1";
+            this.OSValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SpecificationsGroupBox
             // 
@@ -350,29 +336,30 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.36696F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.55486F));
             this.tableLayoutPanel2.Controls.Add(this.MemoryLabel, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.WebcamTextBox, 5, 2);
             this.tableLayoutPanel2.Controls.Add(this.WebcamLabel, 4, 2);
             this.tableLayoutPanel2.Controls.Add(this.CPUBrandLabel, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.HDDTextBox, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.GPUTypeLabel, 4, 1);
             this.tableLayoutPanel2.Controls.Add(this.CPUSpeedLabel, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.HDDLabel, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.CPUTypeLabel, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.MemoryTextBox, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.CPUSpeedTextBox, 3, 2);
             this.tableLayoutPanel2.Controls.Add(this.CPUNumberLabel, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.CPUBrandTextBox, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.CPUTypeTextBox, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.CPUNumberTextBox, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.LCDSizeLabel, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.LCDSizeTextBox, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.GPUTypeTextBox, 5, 1);
+            this.tableLayoutPanel2.Controls.Add(this.MemoryValueLabel, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.LCDSizeValueLabel, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.HDDValueLabel, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.GPUTypeValueLabel, 5, 1);
+            this.tableLayoutPanel2.Controls.Add(this.CPUNumberValueLabel, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.CPUBrandValueLabel, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.CPUTypeValueLabel, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.CPUSpeedValueLabel, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.WebcamValueLabel, 5, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(17, 36);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(793, 189);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
@@ -387,16 +374,6 @@
             this.MemoryLabel.Size = new System.Drawing.Size(79, 63);
             this.MemoryLabel.TabIndex = 1;
             this.MemoryLabel.Text = "Memory";
-            // 
-            // WebcamTextBox
-            // 
-            this.WebcamTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.WebcamTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WebcamTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.WebcamTextBox.Location = new System.Drawing.Point(632, 129);
-            this.WebcamTextBox.Name = "WebcamTextBox";
-            this.WebcamTextBox.Size = new System.Drawing.Size(158, 29);
-            this.WebcamTextBox.TabIndex = 2;
             // 
             // WebcamLabel
             // 
@@ -421,16 +398,6 @@
             this.CPUBrandLabel.Size = new System.Drawing.Size(103, 63);
             this.CPUBrandLabel.TabIndex = 1;
             this.CPUBrandLabel.Text = "CPU Brand";
-            // 
-            // HDDTextBox
-            // 
-            this.HDDTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.HDDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HDDTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.HDDTextBox.Location = new System.Drawing.Point(632, 3);
-            this.HDDTextBox.Name = "HDDTextBox";
-            this.HDDTextBox.Size = new System.Drawing.Size(158, 29);
-            this.HDDTextBox.TabIndex = 2;
             // 
             // GPUTypeLabel
             // 
@@ -480,26 +447,6 @@
             this.CPUTypeLabel.TabIndex = 1;
             this.CPUTypeLabel.Text = "CPU Type";
             // 
-            // MemoryTextBox
-            // 
-            this.MemoryTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MemoryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MemoryTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.MemoryTextBox.Location = new System.Drawing.Point(114, 3);
-            this.MemoryTextBox.Name = "MemoryTextBox";
-            this.MemoryTextBox.Size = new System.Drawing.Size(145, 29);
-            this.MemoryTextBox.TabIndex = 2;
-            // 
-            // CPUSpeedTextBox
-            // 
-            this.CPUSpeedTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.CPUSpeedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CPUSpeedTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.CPUSpeedTextBox.Location = new System.Drawing.Point(395, 129);
-            this.CPUSpeedTextBox.Name = "CPUSpeedTextBox";
-            this.CPUSpeedTextBox.Size = new System.Drawing.Size(126, 29);
-            this.CPUSpeedTextBox.TabIndex = 2;
-            // 
             // CPUNumberLabel
             // 
             this.CPUNumberLabel.AutoSize = true;
@@ -511,36 +458,6 @@
             this.CPUNumberLabel.Size = new System.Drawing.Size(122, 63);
             this.CPUNumberLabel.TabIndex = 1;
             this.CPUNumberLabel.Text = "CPU Number";
-            // 
-            // CPUBrandTextBox
-            // 
-            this.CPUBrandTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.CPUBrandTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CPUBrandTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.CPUBrandTextBox.Location = new System.Drawing.Point(114, 66);
-            this.CPUBrandTextBox.Name = "CPUBrandTextBox";
-            this.CPUBrandTextBox.Size = new System.Drawing.Size(145, 29);
-            this.CPUBrandTextBox.TabIndex = 2;
-            // 
-            // CPUTypeTextBox
-            // 
-            this.CPUTypeTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.CPUTypeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CPUTypeTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.CPUTypeTextBox.Location = new System.Drawing.Point(114, 129);
-            this.CPUTypeTextBox.Name = "CPUTypeTextBox";
-            this.CPUTypeTextBox.Size = new System.Drawing.Size(145, 29);
-            this.CPUTypeTextBox.TabIndex = 2;
-            // 
-            // CPUNumberTextBox
-            // 
-            this.CPUNumberTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.CPUNumberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CPUNumberTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.CPUNumberTextBox.Location = new System.Drawing.Point(395, 66);
-            this.CPUNumberTextBox.Name = "CPUNumberTextBox";
-            this.CPUNumberTextBox.Size = new System.Drawing.Size(126, 29);
-            this.CPUNumberTextBox.TabIndex = 2;
             // 
             // LCDSizeLabel
             // 
@@ -554,25 +471,104 @@
             this.LCDSizeLabel.TabIndex = 1;
             this.LCDSizeLabel.Text = "LCD Size";
             // 
-            // LCDSizeTextBox
+            // MemoryValueLabel
             // 
-            this.LCDSizeTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LCDSizeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LCDSizeTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.LCDSizeTextBox.Location = new System.Drawing.Point(395, 3);
-            this.LCDSizeTextBox.Name = "LCDSizeTextBox";
-            this.LCDSizeTextBox.Size = new System.Drawing.Size(126, 29);
-            this.LCDSizeTextBox.TabIndex = 2;
+            this.MemoryValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.MemoryValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.MemoryValueLabel.Location = new System.Drawing.Point(114, 0);
+            this.MemoryValueLabel.Name = "MemoryValueLabel";
+            this.MemoryValueLabel.Size = new System.Drawing.Size(145, 36);
+            this.MemoryValueLabel.TabIndex = 2;
+            this.MemoryValueLabel.Text = "label5";
+            this.MemoryValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // GPUTypeTextBox
+            // LCDSizeValueLabel
             // 
-            this.GPUTypeTextBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.GPUTypeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GPUTypeTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.GPUTypeTextBox.Location = new System.Drawing.Point(632, 66);
-            this.GPUTypeTextBox.Name = "GPUTypeTextBox";
-            this.GPUTypeTextBox.Size = new System.Drawing.Size(158, 29);
-            this.GPUTypeTextBox.TabIndex = 2;
+            this.LCDSizeValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.LCDSizeValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.LCDSizeValueLabel.Location = new System.Drawing.Point(395, 0);
+            this.LCDSizeValueLabel.Name = "LCDSizeValueLabel";
+            this.LCDSizeValueLabel.Size = new System.Drawing.Size(126, 36);
+            this.LCDSizeValueLabel.TabIndex = 3;
+            this.LCDSizeValueLabel.Text = "label6";
+            this.LCDSizeValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // HDDValueLabel
+            // 
+            this.HDDValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.HDDValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.HDDValueLabel.Location = new System.Drawing.Point(632, 0);
+            this.HDDValueLabel.Name = "HDDValueLabel";
+            this.HDDValueLabel.Size = new System.Drawing.Size(158, 36);
+            this.HDDValueLabel.TabIndex = 4;
+            this.HDDValueLabel.Text = "label7";
+            this.HDDValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // GPUTypeValueLabel
+            // 
+            this.GPUTypeValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.GPUTypeValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.GPUTypeValueLabel.Location = new System.Drawing.Point(632, 63);
+            this.GPUTypeValueLabel.Name = "GPUTypeValueLabel";
+            this.GPUTypeValueLabel.Size = new System.Drawing.Size(158, 36);
+            this.GPUTypeValueLabel.TabIndex = 5;
+            this.GPUTypeValueLabel.Text = "label8";
+            this.GPUTypeValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CPUNumberValueLabel
+            // 
+            this.CPUNumberValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.CPUNumberValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.CPUNumberValueLabel.Location = new System.Drawing.Point(395, 63);
+            this.CPUNumberValueLabel.Name = "CPUNumberValueLabel";
+            this.CPUNumberValueLabel.Size = new System.Drawing.Size(126, 36);
+            this.CPUNumberValueLabel.TabIndex = 6;
+            this.CPUNumberValueLabel.Text = "label9";
+            this.CPUNumberValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CPUBrandValueLabel
+            // 
+            this.CPUBrandValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.CPUBrandValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.CPUBrandValueLabel.Location = new System.Drawing.Point(114, 63);
+            this.CPUBrandValueLabel.Name = "CPUBrandValueLabel";
+            this.CPUBrandValueLabel.Size = new System.Drawing.Size(145, 36);
+            this.CPUBrandValueLabel.TabIndex = 7;
+            this.CPUBrandValueLabel.Text = "label10";
+            this.CPUBrandValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CPUTypeValueLabel
+            // 
+            this.CPUTypeValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.CPUTypeValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.CPUTypeValueLabel.Location = new System.Drawing.Point(114, 126);
+            this.CPUTypeValueLabel.Name = "CPUTypeValueLabel";
+            this.CPUTypeValueLabel.Size = new System.Drawing.Size(145, 36);
+            this.CPUTypeValueLabel.TabIndex = 8;
+            this.CPUTypeValueLabel.Text = "label11";
+            this.CPUTypeValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CPUSpeedValueLabel
+            // 
+            this.CPUSpeedValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.CPUSpeedValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.CPUSpeedValueLabel.Location = new System.Drawing.Point(395, 126);
+            this.CPUSpeedValueLabel.Name = "CPUSpeedValueLabel";
+            this.CPUSpeedValueLabel.Size = new System.Drawing.Size(126, 36);
+            this.CPUSpeedValueLabel.TabIndex = 9;
+            this.CPUSpeedValueLabel.Text = "label12";
+            this.CPUSpeedValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // WebcamValueLabel
+            // 
+            this.WebcamValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.WebcamValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.WebcamValueLabel.Location = new System.Drawing.Point(632, 126);
+            this.WebcamValueLabel.Name = "WebcamValueLabel";
+            this.WebcamValueLabel.Size = new System.Drawing.Size(158, 36);
+            this.WebcamValueLabel.TabIndex = 10;
+            this.WebcamValueLabel.Text = "label13";
+            this.WebcamValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SelectAnotherProductButton
             // 
@@ -613,18 +609,45 @@
             this.ProductInfoNextButton.UseVisualStyleBackColor = false;
             this.ProductInfoNextButton.Click += new System.EventHandler(this.ProductInfoNextButton_Click);
             // 
-            // ProductIDTextBox
-            // 
-            this.ProductIDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductIDTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.ProductIDTextBox.Location = new System.Drawing.Point(119, 35);
-            this.ProductIDTextBox.Name = "ProductIDTextBox";
-            this.ProductIDTextBox.Size = new System.Drawing.Size(100, 29);
-            this.ProductIDTextBox.TabIndex = 2;
-            // 
             // ProductOpenFileDialog
             // 
             this.ProductOpenFileDialog.FileName = "openFileDialog1";
+            // 
+            // ProductIDValueLabel
+            // 
+            this.ProductIDValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.ProductIDValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductIDValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.ProductIDValueLabel.Location = new System.Drawing.Point(127, 38);
+            this.ProductIDValueLabel.Name = "ProductIDValueLabel";
+            this.ProductIDValueLabel.Size = new System.Drawing.Size(84, 36);
+            this.ProductIDValueLabel.TabIndex = 2;
+            this.ProductIDValueLabel.Text = "label1";
+            this.ProductIDValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ConditionValueLabel
+            // 
+            this.ConditionValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.ConditionValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConditionValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.ConditionValueLabel.Location = new System.Drawing.Point(321, 38);
+            this.ConditionValueLabel.Name = "ConditionValueLabel";
+            this.ConditionValueLabel.Size = new System.Drawing.Size(84, 36);
+            this.ConditionValueLabel.TabIndex = 2;
+            this.ConditionValueLabel.Text = "label1";
+            this.ConditionValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CostValueLabel
+            // 
+            this.CostValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.CostValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CostValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.CostValueLabel.Location = new System.Drawing.Point(480, 38);
+            this.CostValueLabel.Name = "CostValueLabel";
+            this.CostValueLabel.Size = new System.Drawing.Size(84, 36);
+            this.CostValueLabel.TabIndex = 2;
+            this.CostValueLabel.Text = "label1";
+            this.CostValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ProductInfoForm
             // 
@@ -638,9 +661,9 @@
             this.Controls.Add(this.SelectAnotherProductButton);
             this.Controls.Add(this.SpecificationsGroupBox);
             this.Controls.Add(this.ProductInfoGroupBox);
-            this.Controls.Add(this.CostTextBox);
-            this.Controls.Add(this.ProductIDTextBox);
-            this.Controls.Add(this.ConditionTextBox);
+            this.Controls.Add(this.CostValueLabel);
+            this.Controls.Add(this.ConditionValueLabel);
+            this.Controls.Add(this.ProductIDValueLabel);
             this.Controls.Add(this.CostLabel);
             this.Controls.Add(this.ConditionLabel);
             this.Controls.Add(this.ProductIDLabel);
@@ -677,43 +700,43 @@
         private System.Windows.Forms.Label ProductIDLabel;
         private System.Windows.Forms.Label ConditionLabel;
         private System.Windows.Forms.Label CostLabel;
-        private System.Windows.Forms.TextBox ConditionTextBox;
-        private System.Windows.Forms.TextBox CostTextBox;
         private System.Windows.Forms.GroupBox ProductInfoGroupBox;
         private System.Windows.Forms.Label ModelLabel;
         private System.Windows.Forms.Label OSLabel;
         private System.Windows.Forms.Label ManufacturerLabel;
         private System.Windows.Forms.Label PlatformLabel;
-        private System.Windows.Forms.TextBox ModelTextBox;
-        private System.Windows.Forms.TextBox OSTextBox;
-        private System.Windows.Forms.TextBox ManufacturerTextBox;
-        private System.Windows.Forms.TextBox PlatformTextBox;
         private System.Windows.Forms.GroupBox SpecificationsGroupBox;
         private System.Windows.Forms.Label CPUNumberLabel;
         private System.Windows.Forms.Label LCDSizeLabel;
         private System.Windows.Forms.Label CPUBrandLabel;
         private System.Windows.Forms.Label MemoryLabel;
-        private System.Windows.Forms.TextBox CPUNumberTextBox;
-        private System.Windows.Forms.TextBox LCDSizeTextBox;
-        private System.Windows.Forms.TextBox CPUBrandTextBox;
-        private System.Windows.Forms.TextBox MemoryTextBox;
         private System.Windows.Forms.Label WebcamLabel;
         private System.Windows.Forms.Label CPUSpeedLabel;
         private System.Windows.Forms.Label GPUTypeLabel;
         private System.Windows.Forms.Label HDDLabel;
         private System.Windows.Forms.Label CPUTypeLabel;
-        private System.Windows.Forms.TextBox WebcamTextBox;
-        private System.Windows.Forms.TextBox CPUSpeedTextBox;
-        private System.Windows.Forms.TextBox GPUTypeTextBox;
-        private System.Windows.Forms.TextBox HDDTextBox;
-        private System.Windows.Forms.TextBox CPUTypeTextBox;
         private System.Windows.Forms.Button SelectAnotherProductButton;
         private System.Windows.Forms.Button ProductInfoCancel;
         private System.Windows.Forms.Button ProductInfoNextButton;
-        private System.Windows.Forms.TextBox ProductIDTextBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.SaveFileDialog ProductSaveFileDialog;
         private System.Windows.Forms.OpenFileDialog ProductOpenFileDialog;
+        private System.Windows.Forms.Label ManufacturerValueLabel;
+        private System.Windows.Forms.Label ModelValueLabel;
+        private System.Windows.Forms.Label PlatformValueLabel;
+        private System.Windows.Forms.Label OSValueLabel;
+        private System.Windows.Forms.Label MemoryValueLabel;
+        private System.Windows.Forms.Label LCDSizeValueLabel;
+        private System.Windows.Forms.Label HDDValueLabel;
+        private System.Windows.Forms.Label GPUTypeValueLabel;
+        private System.Windows.Forms.Label CPUNumberValueLabel;
+        private System.Windows.Forms.Label CPUBrandValueLabel;
+        private System.Windows.Forms.Label CPUTypeValueLabel;
+        private System.Windows.Forms.Label CPUSpeedValueLabel;
+        private System.Windows.Forms.Label WebcamValueLabel;
+        private System.Windows.Forms.Label ProductIDValueLabel;
+        private System.Windows.Forms.Label ConditionValueLabel;
+        private System.Windows.Forms.Label CostValueLabel;
     }
 }

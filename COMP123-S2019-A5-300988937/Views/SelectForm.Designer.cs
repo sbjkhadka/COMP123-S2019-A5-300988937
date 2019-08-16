@@ -29,16 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectForm));
             this.ProductsDataGridView = new System.Windows.Forms.DataGridView();
-            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dollarComputersDataSet = new COMP123_S2019_A5_300988937.DollarComputersDataSet();
-            this.productsTableAdapter = new COMP123_S2019_A5_300988937.DollarComputersDataSetTableAdapters.productsTableAdapter();
-            this.SelectFromTitleBarLabel = new System.Windows.Forms.Label();
-            this.SelectionLabel = new System.Windows.Forms.Label();
-            this.SelectedProductTextBox = new System.Windows.Forms.TextBox();
-            this.CancelButton = new System.Windows.Forms.Button();
-            this.NextButton = new System.Windows.Forms.Button();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +63,14 @@
             this.mousttypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.powerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.webcamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dollarComputersDataSet = new COMP123_S2019_A5_300988937.DollarComputersDataSet();
+            this.productsTableAdapter = new COMP123_S2019_A5_300988937.DollarComputersDataSetTableAdapters.productsTableAdapter();
+            this.SelectFromTitleBarLabel = new System.Windows.Forms.Label();
+            this.SelectionLabel = new System.Windows.Forms.Label();
+            this.SelectedProductTextBox = new System.Windows.Forms.TextBox();
+            this.CancelButton = new System.Windows.Forms.Button();
+            this.NextButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).BeginInit();
@@ -81,9 +82,13 @@
             this.ProductsDataGridView.AllowUserToDeleteRows = false;
             this.ProductsDataGridView.AllowUserToResizeColumns = false;
             this.ProductsDataGridView.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Tomato;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Snow;
+            this.ProductsDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.ProductsDataGridView.AutoGenerateColumns = false;
             this.ProductsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.ProductsDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.ProductsDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.ProductsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProductsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productIDDataGridViewTextBoxColumn,
@@ -118,86 +123,17 @@
             this.powerDataGridViewTextBoxColumn,
             this.webcamDataGridViewTextBoxColumn});
             this.ProductsDataGridView.DataSource = this.productsBindingSource;
+            this.ProductsDataGridView.GridColor = System.Drawing.Color.Silver;
             this.ProductsDataGridView.Location = new System.Drawing.Point(8, 35);
             this.ProductsDataGridView.MultiSelect = false;
             this.ProductsDataGridView.Name = "ProductsDataGridView";
             this.ProductsDataGridView.ReadOnly = true;
+            this.ProductsDataGridView.RowTemplate.DividerHeight = 1;
+            this.ProductsDataGridView.RowTemplate.Height = 25;
             this.ProductsDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ProductsDataGridView.Size = new System.Drawing.Size(852, 459);
             this.ProductsDataGridView.TabIndex = 0;
             this.ProductsDataGridView.SelectionChanged += new System.EventHandler(this.ProductsDataGridView_SelectionChanged);
-            // 
-            // productsBindingSource
-            // 
-            this.productsBindingSource.DataMember = "products";
-            this.productsBindingSource.DataSource = this.dollarComputersDataSet;
-            // 
-            // dollarComputersDataSet
-            // 
-            this.dollarComputersDataSet.DataSetName = "DollarComputersDataSet";
-            this.dollarComputersDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productsTableAdapter
-            // 
-            this.productsTableAdapter.ClearBeforeFill = true;
-            // 
-            // SelectFromTitleBarLabel
-            // 
-            this.SelectFromTitleBarLabel.BackColor = System.Drawing.Color.Transparent;
-            this.SelectFromTitleBarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectFromTitleBarLabel.ForeColor = System.Drawing.Color.Snow;
-            this.SelectFromTitleBarLabel.Location = new System.Drawing.Point(8, 9);
-            this.SelectFromTitleBarLabel.Name = "SelectFromTitleBarLabel";
-            this.SelectFromTitleBarLabel.Size = new System.Drawing.Size(844, 23);
-            this.SelectFromTitleBarLabel.TabIndex = 1;
-            this.SelectFromTitleBarLabel.Text = "List of available hardware";
-            // 
-            // SelectionLabel
-            // 
-            this.SelectionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectionLabel.ForeColor = System.Drawing.Color.Snow;
-            this.SelectionLabel.Location = new System.Drawing.Point(8, 515);
-            this.SelectionLabel.Name = "SelectionLabel";
-            this.SelectionLabel.Size = new System.Drawing.Size(143, 30);
-            this.SelectionLabel.TabIndex = 2;
-            this.SelectionLabel.Text = "You Selected: ";
-            // 
-            // SelectedProductTextBox
-            // 
-            this.SelectedProductTextBox.BackColor = System.Drawing.Color.Snow;
-            this.SelectedProductTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectedProductTextBox.ForeColor = System.Drawing.Color.Tomato;
-            this.SelectedProductTextBox.Location = new System.Drawing.Point(157, 510);
-            this.SelectedProductTextBox.Name = "SelectedProductTextBox";
-            this.SelectedProductTextBox.ReadOnly = true;
-            this.SelectedProductTextBox.Size = new System.Drawing.Size(407, 35);
-            this.SelectedProductTextBox.TabIndex = 3;
-            // 
-            // CancelButton
-            // 
-            this.CancelButton.BackColor = System.Drawing.Color.Snow;
-            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.ForeColor = System.Drawing.Color.Tomato;
-            this.CancelButton.Location = new System.Drawing.Point(592, 510);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(127, 35);
-            this.CancelButton.TabIndex = 4;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = false;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
-            // 
-            // NextButton
-            // 
-            this.NextButton.BackColor = System.Drawing.Color.Snow;
-            this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextButton.ForeColor = System.Drawing.Color.Tomato;
-            this.NextButton.Location = new System.Drawing.Point(733, 510);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(127, 37);
-            this.NextButton.TabIndex = 4;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = false;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -446,6 +382,78 @@
             this.webcamDataGridViewTextBoxColumn.Name = "webcamDataGridViewTextBoxColumn";
             this.webcamDataGridViewTextBoxColumn.ReadOnly = true;
             this.webcamDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // productsBindingSource
+            // 
+            this.productsBindingSource.DataMember = "products";
+            this.productsBindingSource.DataSource = this.dollarComputersDataSet;
+            // 
+            // dollarComputersDataSet
+            // 
+            this.dollarComputersDataSet.DataSetName = "DollarComputersDataSet";
+            this.dollarComputersDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productsTableAdapter
+            // 
+            this.productsTableAdapter.ClearBeforeFill = true;
+            // 
+            // SelectFromTitleBarLabel
+            // 
+            this.SelectFromTitleBarLabel.BackColor = System.Drawing.Color.Transparent;
+            this.SelectFromTitleBarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectFromTitleBarLabel.ForeColor = System.Drawing.Color.Snow;
+            this.SelectFromTitleBarLabel.Location = new System.Drawing.Point(8, 9);
+            this.SelectFromTitleBarLabel.Name = "SelectFromTitleBarLabel";
+            this.SelectFromTitleBarLabel.Size = new System.Drawing.Size(844, 23);
+            this.SelectFromTitleBarLabel.TabIndex = 1;
+            this.SelectFromTitleBarLabel.Text = "List of available hardware";
+            // 
+            // SelectionLabel
+            // 
+            this.SelectionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectionLabel.ForeColor = System.Drawing.Color.Snow;
+            this.SelectionLabel.Location = new System.Drawing.Point(8, 515);
+            this.SelectionLabel.Name = "SelectionLabel";
+            this.SelectionLabel.Size = new System.Drawing.Size(143, 30);
+            this.SelectionLabel.TabIndex = 2;
+            this.SelectionLabel.Text = "You Selected: ";
+            // 
+            // SelectedProductTextBox
+            // 
+            this.SelectedProductTextBox.BackColor = System.Drawing.Color.Snow;
+            this.SelectedProductTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectedProductTextBox.ForeColor = System.Drawing.Color.Tomato;
+            this.SelectedProductTextBox.Location = new System.Drawing.Point(157, 510);
+            this.SelectedProductTextBox.Name = "SelectedProductTextBox";
+            this.SelectedProductTextBox.ReadOnly = true;
+            this.SelectedProductTextBox.Size = new System.Drawing.Size(407, 35);
+            this.SelectedProductTextBox.TabIndex = 3;
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.BackColor = System.Drawing.Color.Snow;
+            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelButton.ForeColor = System.Drawing.Color.Tomato;
+            this.CancelButton.Location = new System.Drawing.Point(592, 510);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(127, 35);
+            this.CancelButton.TabIndex = 4;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = false;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // NextButton
+            // 
+            this.NextButton.BackColor = System.Drawing.Color.Snow;
+            this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextButton.ForeColor = System.Drawing.Color.Tomato;
+            this.NextButton.Location = new System.Drawing.Point(733, 510);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(127, 37);
+            this.NextButton.TabIndex = 4;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = false;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // SelectForm
             // 

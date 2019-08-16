@@ -106,9 +106,10 @@ namespace COMP123_S2019_A5_300988937.Views
             OSValueLabel.Text = Model.OS;
 
             PrepareBill(Model);
-
+            SelectImage(Model);
         }
 
-      
+        
+
     }
 }

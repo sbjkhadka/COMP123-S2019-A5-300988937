@@ -46,6 +46,10 @@
             this.ConditionLabel = new System.Windows.Forms.Label();
             this.PlatformLabel = new System.Windows.Forms.Label();
             this.ManufacturerLabel = new System.Windows.Forms.Label();
+            this.ConditionValueLabel = new System.Windows.Forms.Label();
+            this.PlatformValueLabel = new System.Windows.Forms.Label();
+            this.ManufacturerValueLabel = new System.Windows.Forms.Label();
+            this.ModelValueLabel = new System.Windows.Forms.Label();
             this.SpecificationsGroupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.GPUTypeLabel = new System.Windows.Forms.Label();
@@ -54,10 +58,20 @@
             this.CPUBrandLabel = new System.Windows.Forms.Label();
             this.CPUTypeLabel = new System.Windows.Forms.Label();
             this.LCDSizeLabel = new System.Windows.Forms.Label();
+            this.CPUSpeedValueLabel = new System.Windows.Forms.Label();
             this.CPUNumberLabel = new System.Windows.Forms.Label();
             this.WebcamLabel = new System.Windows.Forms.Label();
             this.MemoryLabel = new System.Windows.Forms.Label();
             this.OSLabel = new System.Windows.Forms.Label();
+            this.CPUBrandValueLabel = new System.Windows.Forms.Label();
+            this.CPUTypeValueLabel = new System.Windows.Forms.Label();
+            this.LCDSizeValueLabel = new System.Windows.Forms.Label();
+            this.CPUNumberValueLabel = new System.Windows.Forms.Label();
+            this.HDDValueLabel = new System.Windows.Forms.Label();
+            this.GPUTypeValueLabel = new System.Windows.Forms.Label();
+            this.WebcamValueLabel = new System.Windows.Forms.Label();
+            this.MemoryValueLabel = new System.Windows.Forms.Label();
+            this.OSValueLabel = new System.Windows.Forms.Label();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.OrderFormBackButton = new System.Windows.Forms.Button();
@@ -68,26 +82,12 @@
             this.TotalLabel = new System.Windows.Forms.Label();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TotalValueLabel = new System.Windows.Forms.Label();
+            this.PriceValueLabel = new System.Windows.Forms.Label();
+            this.SalesTaxValueLabel = new System.Windows.Forms.Label();
             this.shapeContainer3 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.SelectedProductPictureBox = new System.Windows.Forms.PictureBox();
             this.ProductPrintForm = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
-            this.ConditionValueLabel = new System.Windows.Forms.Label();
-            this.PlatformValueLabel = new System.Windows.Forms.Label();
-            this.ManufacturerValueLabel = new System.Windows.Forms.Label();
-            this.ModelValueLabel = new System.Windows.Forms.Label();
-            this.CPUSpeedValueLabel = new System.Windows.Forms.Label();
-            this.CPUBrandValueLabel = new System.Windows.Forms.Label();
-            this.CPUTypeValueLabel = new System.Windows.Forms.Label();
-            this.LCDSizeValueLabel = new System.Windows.Forms.Label();
-            this.CPUNumberValueLabel = new System.Windows.Forms.Label();
-            this.HDDValueLabel = new System.Windows.Forms.Label();
-            this.GPUTypeValueLabel = new System.Windows.Forms.Label();
-            this.WebcamValueLabel = new System.Windows.Forms.Label();
-            this.MemoryValueLabel = new System.Windows.Forms.Label();
-            this.OSValueLabel = new System.Windows.Forms.Label();
-            this.SalesTaxValueLabel = new System.Windows.Forms.Label();
-            this.PriceValueLabel = new System.Windows.Forms.Label();
-            this.TotalValueLabel = new System.Windows.Forms.Label();
             this.OrderFormMenuStrip.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -123,12 +123,12 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(137, 6);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(137, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -136,14 +136,14 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.OrderFromCancelButton_Click);
             // 
@@ -259,6 +259,50 @@
             this.ManufacturerLabel.Size = new System.Drawing.Size(120, 63);
             this.ManufacturerLabel.TabIndex = 1;
             this.ManufacturerLabel.Text = "Manufacturer";
+            // 
+            // ConditionValueLabel
+            // 
+            this.ConditionValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.ConditionValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.ConditionValueLabel.Location = new System.Drawing.Point(132, 0);
+            this.ConditionValueLabel.Name = "ConditionValueLabel";
+            this.ConditionValueLabel.Size = new System.Drawing.Size(163, 26);
+            this.ConditionValueLabel.TabIndex = 2;
+            this.ConditionValueLabel.Text = "label1";
+            this.ConditionValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // PlatformValueLabel
+            // 
+            this.PlatformValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.PlatformValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.PlatformValueLabel.Location = new System.Drawing.Point(398, 0);
+            this.PlatformValueLabel.Name = "PlatformValueLabel";
+            this.PlatformValueLabel.Size = new System.Drawing.Size(201, 26);
+            this.PlatformValueLabel.TabIndex = 2;
+            this.PlatformValueLabel.Text = "label1";
+            this.PlatformValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ManufacturerValueLabel
+            // 
+            this.ManufacturerValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.ManufacturerValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.ManufacturerValueLabel.Location = new System.Drawing.Point(132, 62);
+            this.ManufacturerValueLabel.Name = "ManufacturerValueLabel";
+            this.ManufacturerValueLabel.Size = new System.Drawing.Size(163, 26);
+            this.ManufacturerValueLabel.TabIndex = 2;
+            this.ManufacturerValueLabel.Text = "label1";
+            this.ManufacturerValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ModelValueLabel
+            // 
+            this.ModelValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.ModelValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.ModelValueLabel.Location = new System.Drawing.Point(398, 62);
+            this.ModelValueLabel.Name = "ModelValueLabel";
+            this.ModelValueLabel.Size = new System.Drawing.Size(201, 26);
+            this.ModelValueLabel.TabIndex = 2;
+            this.ModelValueLabel.Text = "label1";
+            this.ModelValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SpecificationsGroupBox
             // 
@@ -384,6 +428,17 @@
             this.LCDSizeLabel.TabIndex = 1;
             this.LCDSizeLabel.Text = "LCD Size";
             // 
+            // CPUSpeedValueLabel
+            // 
+            this.CPUSpeedValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.CPUSpeedValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.CPUSpeedValueLabel.Location = new System.Drawing.Point(138, 0);
+            this.CPUSpeedValueLabel.Name = "CPUSpeedValueLabel";
+            this.CPUSpeedValueLabel.Size = new System.Drawing.Size(163, 26);
+            this.CPUSpeedValueLabel.TabIndex = 2;
+            this.CPUSpeedValueLabel.Text = "label1";
+            this.CPUSpeedValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // CPUNumberLabel
             // 
             this.CPUNumberLabel.AutoSize = true;
@@ -429,6 +484,105 @@
             this.OSLabel.Size = new System.Drawing.Size(44, 53);
             this.OSLabel.TabIndex = 3;
             this.OSLabel.Text = "OS";
+            // 
+            // CPUBrandValueLabel
+            // 
+            this.CPUBrandValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.CPUBrandValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.CPUBrandValueLabel.Location = new System.Drawing.Point(138, 49);
+            this.CPUBrandValueLabel.Name = "CPUBrandValueLabel";
+            this.CPUBrandValueLabel.Size = new System.Drawing.Size(163, 26);
+            this.CPUBrandValueLabel.TabIndex = 2;
+            this.CPUBrandValueLabel.Text = "label1";
+            this.CPUBrandValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CPUTypeValueLabel
+            // 
+            this.CPUTypeValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.CPUTypeValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.CPUTypeValueLabel.Location = new System.Drawing.Point(138, 98);
+            this.CPUTypeValueLabel.Name = "CPUTypeValueLabel";
+            this.CPUTypeValueLabel.Size = new System.Drawing.Size(163, 26);
+            this.CPUTypeValueLabel.TabIndex = 2;
+            this.CPUTypeValueLabel.Text = "label1";
+            this.CPUTypeValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LCDSizeValueLabel
+            // 
+            this.LCDSizeValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.LCDSizeValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.LCDSizeValueLabel.Location = new System.Drawing.Point(138, 147);
+            this.LCDSizeValueLabel.Name = "LCDSizeValueLabel";
+            this.LCDSizeValueLabel.Size = new System.Drawing.Size(163, 26);
+            this.LCDSizeValueLabel.TabIndex = 2;
+            this.LCDSizeValueLabel.Text = "label1";
+            this.LCDSizeValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CPUNumberValueLabel
+            // 
+            this.CPUNumberValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.CPUNumberValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.CPUNumberValueLabel.Location = new System.Drawing.Point(138, 196);
+            this.CPUNumberValueLabel.Name = "CPUNumberValueLabel";
+            this.CPUNumberValueLabel.Size = new System.Drawing.Size(163, 26);
+            this.CPUNumberValueLabel.TabIndex = 2;
+            this.CPUNumberValueLabel.Text = "label1";
+            this.CPUNumberValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // HDDValueLabel
+            // 
+            this.HDDValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.HDDValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.HDDValueLabel.Location = new System.Drawing.Point(413, 0);
+            this.HDDValueLabel.Name = "HDDValueLabel";
+            this.HDDValueLabel.Size = new System.Drawing.Size(197, 26);
+            this.HDDValueLabel.TabIndex = 2;
+            this.HDDValueLabel.Text = "label1";
+            this.HDDValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // GPUTypeValueLabel
+            // 
+            this.GPUTypeValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.GPUTypeValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.GPUTypeValueLabel.Location = new System.Drawing.Point(413, 49);
+            this.GPUTypeValueLabel.Name = "GPUTypeValueLabel";
+            this.GPUTypeValueLabel.Size = new System.Drawing.Size(197, 26);
+            this.GPUTypeValueLabel.TabIndex = 2;
+            this.GPUTypeValueLabel.Text = "label1";
+            this.GPUTypeValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // WebcamValueLabel
+            // 
+            this.WebcamValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.WebcamValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.WebcamValueLabel.Location = new System.Drawing.Point(413, 98);
+            this.WebcamValueLabel.Name = "WebcamValueLabel";
+            this.WebcamValueLabel.Size = new System.Drawing.Size(197, 26);
+            this.WebcamValueLabel.TabIndex = 2;
+            this.WebcamValueLabel.Text = "label1";
+            this.WebcamValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // MemoryValueLabel
+            // 
+            this.MemoryValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.MemoryValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.MemoryValueLabel.Location = new System.Drawing.Point(413, 147);
+            this.MemoryValueLabel.Name = "MemoryValueLabel";
+            this.MemoryValueLabel.Size = new System.Drawing.Size(197, 26);
+            this.MemoryValueLabel.TabIndex = 2;
+            this.MemoryValueLabel.Text = "label1";
+            this.MemoryValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // OSValueLabel
+            // 
+            this.OSValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.OSValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.OSValueLabel.Location = new System.Drawing.Point(413, 196);
+            this.OSValueLabel.Name = "OSValueLabel";
+            this.OSValueLabel.Size = new System.Drawing.Size(197, 26);
+            this.OSValueLabel.TabIndex = 2;
+            this.OSValueLabel.Text = "label1";
+            this.OSValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // shapeContainer2
             // 
@@ -549,6 +703,39 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Calculaions";
             // 
+            // TotalValueLabel
+            // 
+            this.TotalValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.TotalValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.TotalValueLabel.Location = new System.Drawing.Point(3, 207);
+            this.TotalValueLabel.Name = "TotalValueLabel";
+            this.TotalValueLabel.Size = new System.Drawing.Size(197, 26);
+            this.TotalValueLabel.TabIndex = 2;
+            this.TotalValueLabel.Text = "label1";
+            this.TotalValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // PriceValueLabel
+            // 
+            this.PriceValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.PriceValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.PriceValueLabel.Location = new System.Drawing.Point(1, 48);
+            this.PriceValueLabel.Name = "PriceValueLabel";
+            this.PriceValueLabel.Size = new System.Drawing.Size(197, 26);
+            this.PriceValueLabel.TabIndex = 2;
+            this.PriceValueLabel.Text = "label1";
+            this.PriceValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // SalesTaxValueLabel
+            // 
+            this.SalesTaxValueLabel.BackColor = System.Drawing.Color.Bisque;
+            this.SalesTaxValueLabel.ForeColor = System.Drawing.Color.Tomato;
+            this.SalesTaxValueLabel.Location = new System.Drawing.Point(3, 100);
+            this.SalesTaxValueLabel.Name = "SalesTaxValueLabel";
+            this.SalesTaxValueLabel.Size = new System.Drawing.Size(197, 26);
+            this.SalesTaxValueLabel.TabIndex = 2;
+            this.SalesTaxValueLabel.Text = "label1";
+            this.SalesTaxValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // shapeContainer3
             // 
             this.shapeContainer3.Location = new System.Drawing.Point(3, 28);
@@ -577,176 +764,6 @@
             this.ProductPrintForm.PrintAction = System.Drawing.Printing.PrintAction.PrintToPreview;
             this.ProductPrintForm.PrinterSettings = ((System.Drawing.Printing.PrinterSettings)(resources.GetObject("ProductPrintForm.PrinterSettings")));
             this.ProductPrintForm.PrintFileName = null;
-            // 
-            // ConditionValueLabel
-            // 
-            this.ConditionValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.ConditionValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.ConditionValueLabel.Location = new System.Drawing.Point(132, 0);
-            this.ConditionValueLabel.Name = "ConditionValueLabel";
-            this.ConditionValueLabel.Size = new System.Drawing.Size(163, 26);
-            this.ConditionValueLabel.TabIndex = 2;
-            this.ConditionValueLabel.Text = "label1";
-            // 
-            // PlatformValueLabel
-            // 
-            this.PlatformValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.PlatformValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.PlatformValueLabel.Location = new System.Drawing.Point(398, 0);
-            this.PlatformValueLabel.Name = "PlatformValueLabel";
-            this.PlatformValueLabel.Size = new System.Drawing.Size(201, 26);
-            this.PlatformValueLabel.TabIndex = 2;
-            this.PlatformValueLabel.Text = "label1";
-            // 
-            // ManufacturerValueLabel
-            // 
-            this.ManufacturerValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.ManufacturerValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.ManufacturerValueLabel.Location = new System.Drawing.Point(132, 62);
-            this.ManufacturerValueLabel.Name = "ManufacturerValueLabel";
-            this.ManufacturerValueLabel.Size = new System.Drawing.Size(163, 26);
-            this.ManufacturerValueLabel.TabIndex = 2;
-            this.ManufacturerValueLabel.Text = "label1";
-            // 
-            // ModelValueLabel
-            // 
-            this.ModelValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.ModelValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.ModelValueLabel.Location = new System.Drawing.Point(398, 62);
-            this.ModelValueLabel.Name = "ModelValueLabel";
-            this.ModelValueLabel.Size = new System.Drawing.Size(201, 26);
-            this.ModelValueLabel.TabIndex = 2;
-            this.ModelValueLabel.Text = "label1";
-            // 
-            // CPUSpeedValueLabel
-            // 
-            this.CPUSpeedValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.CPUSpeedValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.CPUSpeedValueLabel.Location = new System.Drawing.Point(138, 0);
-            this.CPUSpeedValueLabel.Name = "CPUSpeedValueLabel";
-            this.CPUSpeedValueLabel.Size = new System.Drawing.Size(163, 26);
-            this.CPUSpeedValueLabel.TabIndex = 2;
-            this.CPUSpeedValueLabel.Text = "label1";
-            // 
-            // CPUBrandValueLabel
-            // 
-            this.CPUBrandValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.CPUBrandValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.CPUBrandValueLabel.Location = new System.Drawing.Point(138, 49);
-            this.CPUBrandValueLabel.Name = "CPUBrandValueLabel";
-            this.CPUBrandValueLabel.Size = new System.Drawing.Size(163, 26);
-            this.CPUBrandValueLabel.TabIndex = 2;
-            this.CPUBrandValueLabel.Text = "label1";
-            // 
-            // CPUTypeValueLabel
-            // 
-            this.CPUTypeValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.CPUTypeValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.CPUTypeValueLabel.Location = new System.Drawing.Point(138, 98);
-            this.CPUTypeValueLabel.Name = "CPUTypeValueLabel";
-            this.CPUTypeValueLabel.Size = new System.Drawing.Size(163, 26);
-            this.CPUTypeValueLabel.TabIndex = 2;
-            this.CPUTypeValueLabel.Text = "label1";
-            // 
-            // LCDSizeValueLabel
-            // 
-            this.LCDSizeValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.LCDSizeValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.LCDSizeValueLabel.Location = new System.Drawing.Point(138, 147);
-            this.LCDSizeValueLabel.Name = "LCDSizeValueLabel";
-            this.LCDSizeValueLabel.Size = new System.Drawing.Size(163, 26);
-            this.LCDSizeValueLabel.TabIndex = 2;
-            this.LCDSizeValueLabel.Text = "label1";
-            // 
-            // CPUNumberValueLabel
-            // 
-            this.CPUNumberValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.CPUNumberValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.CPUNumberValueLabel.Location = new System.Drawing.Point(138, 196);
-            this.CPUNumberValueLabel.Name = "CPUNumberValueLabel";
-            this.CPUNumberValueLabel.Size = new System.Drawing.Size(163, 26);
-            this.CPUNumberValueLabel.TabIndex = 2;
-            this.CPUNumberValueLabel.Text = "label1";
-            // 
-            // HDDValueLabel
-            // 
-            this.HDDValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.HDDValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.HDDValueLabel.Location = new System.Drawing.Point(413, 0);
-            this.HDDValueLabel.Name = "HDDValueLabel";
-            this.HDDValueLabel.Size = new System.Drawing.Size(197, 26);
-            this.HDDValueLabel.TabIndex = 2;
-            this.HDDValueLabel.Text = "label1";
-            // 
-            // GPUTypeValueLabel
-            // 
-            this.GPUTypeValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.GPUTypeValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.GPUTypeValueLabel.Location = new System.Drawing.Point(413, 49);
-            this.GPUTypeValueLabel.Name = "GPUTypeValueLabel";
-            this.GPUTypeValueLabel.Size = new System.Drawing.Size(197, 26);
-            this.GPUTypeValueLabel.TabIndex = 2;
-            this.GPUTypeValueLabel.Text = "label1";
-            // 
-            // WebcamValueLabel
-            // 
-            this.WebcamValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.WebcamValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.WebcamValueLabel.Location = new System.Drawing.Point(413, 98);
-            this.WebcamValueLabel.Name = "WebcamValueLabel";
-            this.WebcamValueLabel.Size = new System.Drawing.Size(197, 26);
-            this.WebcamValueLabel.TabIndex = 2;
-            this.WebcamValueLabel.Text = "label1";
-            // 
-            // MemoryValueLabel
-            // 
-            this.MemoryValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.MemoryValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.MemoryValueLabel.Location = new System.Drawing.Point(413, 147);
-            this.MemoryValueLabel.Name = "MemoryValueLabel";
-            this.MemoryValueLabel.Size = new System.Drawing.Size(197, 26);
-            this.MemoryValueLabel.TabIndex = 2;
-            this.MemoryValueLabel.Text = "label1";
-            // 
-            // OSValueLabel
-            // 
-            this.OSValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.OSValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.OSValueLabel.Location = new System.Drawing.Point(413, 196);
-            this.OSValueLabel.Name = "OSValueLabel";
-            this.OSValueLabel.Size = new System.Drawing.Size(197, 26);
-            this.OSValueLabel.TabIndex = 2;
-            this.OSValueLabel.Text = "label1";
-            // 
-            // SalesTaxValueLabel
-            // 
-            this.SalesTaxValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.SalesTaxValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.SalesTaxValueLabel.Location = new System.Drawing.Point(3, 100);
-            this.SalesTaxValueLabel.Name = "SalesTaxValueLabel";
-            this.SalesTaxValueLabel.Size = new System.Drawing.Size(197, 26);
-            this.SalesTaxValueLabel.TabIndex = 2;
-            this.SalesTaxValueLabel.Text = "label1";
-            // 
-            // PriceValueLabel
-            // 
-            this.PriceValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.PriceValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.PriceValueLabel.Location = new System.Drawing.Point(1, 48);
-            this.PriceValueLabel.Name = "PriceValueLabel";
-            this.PriceValueLabel.Size = new System.Drawing.Size(197, 26);
-            this.PriceValueLabel.TabIndex = 2;
-            this.PriceValueLabel.Text = "label1";
-            // 
-            // TotalValueLabel
-            // 
-            this.TotalValueLabel.BackColor = System.Drawing.Color.Bisque;
-            this.TotalValueLabel.ForeColor = System.Drawing.Color.Tomato;
-            this.TotalValueLabel.Location = new System.Drawing.Point(3, 207);
-            this.TotalValueLabel.Name = "TotalValueLabel";
-            this.TotalValueLabel.Size = new System.Drawing.Size(197, 26);
-            this.TotalValueLabel.TabIndex = 2;
-            this.TotalValueLabel.Text = "label1";
             // 
             // OrderForm
             // 

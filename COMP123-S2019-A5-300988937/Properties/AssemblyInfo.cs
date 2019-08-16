@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("COMP123-S2019-A5-300988937")]
-[assembly: AssemblyDescription("This application allows user to select products from a database table as well as from the saved file.")]
+[assembly: AssemblyDescription("This application allows user to select products from a database table as well as from the saved file.\nwww.centennialcollege.ca")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Centennial College")]
 [assembly: AssemblyProduct("COMP123-S2019-A5-300988937")]
